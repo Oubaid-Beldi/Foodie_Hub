@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:padding="24dp"
+    android:background="@drawable/menu"
+    >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/bbbb"
+
+        android:padding="24dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linear1"
+            android:layout_centerHorizontal="true"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FoodieHub "
+                android:textStyle="bold"
+                android:textSize="24dp"
+                android:textColor="@color/gold3"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menu"
+                android:textStyle="italic"
+                android:textSize="26dp"
+                android:textColor="@color/warmred"
+
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/linear1"
+            android:orientation="vertical"
+            android:id="@+id/mainlinair"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/mainlinair"
+                android:layout_marginTop="15dp"
+                android:id="@+id/plate1"
+
+                >
+                <TextView
+                    android:id="@+id/dishNameTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="Pizza"
+                    android:textColor="@color/black"
+                    />
+
+                <!-- Dish Description -->
+                <TextView
+                    android:id="@+id/dishDescriptionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="
+Indulge in the perfect harmony of our signature pizza with a crispy crust, melted mozzarella, zesty tomato sauce, and a vibrant medley of fresh toppings."
+                    android:textColor="@color/black"
+                    />
+
+                <!-- Dish Price -->
+                <TextView
+                    android:id="@+id/dishPriceTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="Price: $9.99"
+                    android:textColor="@color/gold3"
+                    />
+                <ImageView
+                    android:id="@+id/dishImageView"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pizza"/>
+
+
+                <!-- Add to Cart Button -->
+                <Button
+                    android:id="@+id/addToCartButton"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Add to Cart"
+                    android:background="@drawable/main_btn_styling"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/mainlinair"
+                android:layout_marginTop="15dp"
+                android:id="@+id/plate2"
+
+                >
+                <TextView
+                    android:id="@+id/dish2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="Spaghetti Bolognese"
+                    android:textColor="@color/black"
+                    />
+
+                <!-- Dish Description -->
+                <TextView
+                    android:id="@+id/dish2DescriptionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="A classic Italian dish featuring al dente spaghetti smothered in a rich and savory Bolognese sauce made with ground meat, tomatoes, and aromatic herbs."/>
+
+                <!-- Dish Price -->
+                <TextView
+                    android:id="@+id/dish2PriceTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/gold3"
+                    android:text="Price: $9.99"/>
+                <ImageView
+                    android:id="@+id/dish2ImageView"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/spaghetti"
+                    />
+
+
+                <!-- Add to Cart Button -->
+                <Button
+                    android:id="@+id/addToCartButton2"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Add to Cart"
+                    android:background="@drawable/main_btn_styling"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/mainlinair"
+                android:layout_marginTop="15dp"
+                android:id="@+id/plate3"
+
+                >
+                <TextView
+                    android:id="@+id/dish3NameTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="Chicken Tikka Masala"
+                    android:textColor="@color/black"
+                    />
+
+                <!-- Dish Description -->
+                <TextView
+                    android:id="@+id/dish3DescriptionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="A popular Indian dish where succulent pieces of marinated chicken are grilled and then simmered in a creamy, flavorful tomato-based curry sauce, creating a delicious blend of spices."/>
+
+                <!-- Dish Price -->
+                <TextView
+                    android:id="@+id/dish3PriceTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="Price: $9.99"
+                    android:textColor="@color/gold3"
+                    />
+                <ImageView
+                    android:id="@+id/dish3ImageView"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/chickentikka"/>
+
+
+                <!-- Add to Cart Button -->
+                <Button
+                    android:id="@+id/addToCartButton3"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Add to Cart"
+                    android:background="@drawable/main_btn_styling"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/mainlinair"
+                android:layout_marginTop="15dp"
+                android:id="@+id/plate4"
+
+                >
+                <TextView
+                    android:id="@+id/dish4NameTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="Steak au Poivre"
+                    android:textColor="@color/black"/>
+
+                <!-- Dish Description -->
+                <TextView
+                    android:id="@+id/dish4DescriptionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="This French culinary classic features a perfectly cooked steak, often filet mignon, coated with cracked peppercorns and served with a luscious cream and brandy-based peppercorn sauce."/>
+
+                <!-- Dish Price -->
+                <TextView
+                    android:id="@+id/dish4PriceTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/gold3"
+                    android:text="Price: $9.99"/>
+                <ImageView
+                    android:id="@+id/dish4ImageView"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/steak"/>
+
+
+                <!-- Add to Cart Button -->
+                <Button
+                    android:id="@+id/addToCartButton4"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Add to Cart"
+                    android:background="@drawable/main_btn_styling"
+
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/text"
+            android:layout_below="@+id/mainlinair"
+            android:text="This is our special for today"
+            android:textSize="20dp"
+            android:textColor="@color/warmred"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            />
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/text"
+            android:textColor="@color/white"
+            android:id="@+id/chefAddedMenu"
+
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

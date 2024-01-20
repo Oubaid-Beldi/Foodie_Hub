@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Step into a World of Taste: Where Every Bite Tells a Story!"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:padding="40dp"
+        android:id="@+id/text1"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text1"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"
+        android:id="@+id/layout1"
+
+
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/alt_btn_styling"
+            android:text="customer"
+            android:textColor="@color/white"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="90dp"
+            android:textStyle="bold"
+            android:id="@+id/customerBtn"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/alt_btn_styling"
+            android:text="chef"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/chefBtn"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout1"
+        android:layout_marginTop="100dp"
+        android:text=
+"Tap into more excitement! Follow us on social media for exclusive updates. 🌟 #StayConnected #DiscoverMore"
+        android:textColor="@color/gold1"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+
+
+        ></TextView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1"
+        android:layout_marginTop="240dp"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        >
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/facebook"
+            android:layout_marginRight="25dp"
+
+            />
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/twitter"
+            android:layout_marginRight="25dp"
+
+
+            />
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/instagram"
+
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="darkGray">#FF4E4B55</color>
+    <color name="brown">#FF7E442A</color>
+    <color name="lightBrown">#FFD09C73</color>
+    <color name="darkBrown">#FF433739</color>
+   <color name="warmred">#F54029</color>
+    <color name="lineSeparator">#FF7F5939</color>
+    <color name="gold">	#ffbf00</color>
+    <color name="gold1">#ffcf40</color>
+    <color name="gold3">#ffd700</color>
+</resources>

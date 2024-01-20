@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/menu"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Welcome Chef"
+        android:id="@+id/Welcoming"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="@color/lightBrown"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="This is our Menu fo today : "
+        android:layout_below="@+id/Welcoming"
+        android:layout_marginTop="10dp"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="@color/lightBrown"
+        android:id="@+id/menuPhrase"
+        />
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menuPhrase"
+        android:textColor="@color/white"
+        android:id="@+id/ourmenu"
+
+
+        />
+
+
+</RelativeLayout>

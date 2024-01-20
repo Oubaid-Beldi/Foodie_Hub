@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Home"
+        android:icon="@drawable/home"
+        android:id="@+id/Chefhome"
+        />
+    <item
+        android:title="Pending Orders"
+        android:icon="@drawable/ic_pending_orders"
+        android:id="@+id/pending_order"
+        />
+    <item
+        android:title="Orders"
+        android:icon="@drawable/orders"
+        android:id="@+id/orders"
+        />
+    <item
+        android:title="Dish"
+        android:icon="@drawable/post_dishes"
+        android:id="@+id/dishes"
+        />
+</menu>

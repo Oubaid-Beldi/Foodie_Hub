@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChefFoodPanel.chef_postDish"
+    android:background="@drawable/mychef"
+    >
+    <ImageButton
+        android:id="@+id/image_upload"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/camerashape"
+        android:src="@drawable/camera_alt_24"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+
+        />
+
+
+    <LinearLayout
+        android:layout_below="@+id/image_upload"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/linear_layout1"
+    android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+
+
+>
+
+    <TextView
+        android:layout_width="105dp"
+        android:layout_height="30dp"
+        android:id="@+id/textView"
+        android:text="Dish Name"
+        android:textColor="@color/lightBrown"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Enter your dish name"
+        android:textColorHint="@color/lightBrown"
+        android:id="@+id/dishName"
+        android:textColor="@color/warmred"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear_layout2"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linear_layout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        >
+
+        <TextView
+            android:layout_width="105dp"
+            android:layout_height="30dp"
+            android:id="@+id/textViewa"
+            android:text="Description"
+            android:textColor="@color/lightBrown"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:textSize="18sp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Description"
+            android:textColorHint="@color/lightBrown"
+            android:id="@+id/descr"
+            android:textColor="@color/warmred"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/linear_layout2"
+    android:id="@+id/linear_layout3"
+    android:orientation="horizontal"
+    android:layout_marginTop="30dp"
+    android:layout_centerHorizontal="true"
+    >
+    <TextView
+        android:layout_width="105dp"
+        android:layout_height="30dp"
+        android:id="@+id/priceViewa"
+        android:text="Price"
+        android:textColor="@color/lightBrown"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Price $$$$"
+        android:textColorHint="@color/lightBrown"
+        android:id="@+id/price"
+        android:textColor="@color/warmred"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_layout3"
+        android:id="@+id/linear_layout4"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        >
+        <TextView
+            android:layout_width="105dp"
+            android:layout_height="30dp"
+            android:id="@+id/QuantityView"
+            android:text="Quantity"
+            android:textColor="@color/lightBrown"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:textSize="18sp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Quantity en g"
+            android:textColorHint="@color/lightBrown"
+            android:id="@+id/quantity"
+            android:textColor="@color/warmred"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_layout4"
+        android:layout_marginTop="40dp"
+        android:text="Post"
+        android:background="@drawable/main_btn_styling"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/postBtn"
+
+        />
+
+
+
+</RelativeLayout>

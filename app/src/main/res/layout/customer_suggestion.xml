@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/customer"
+
+    >
+
+    <!-- Suggestion Card -->
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="30dp"
+        android:id="@+id/cardViewSuggestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+
+        >
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@color/lightBrown"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="We are open for your suggestion"
+                android:id="@+id/textSugg"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                />
+
+            <!-- Customer Suggestion Input -->
+            <EditText
+                android:layout_below="@+id/textSugg"
+                android:id="@+id/editTextSuggestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your suggestion"
+                android:layout_marginBottom="40dp"
+                />
+            <Button
+                android:layout_below="@id/editTextSuggestion"
+                android:id="@+id/buttonSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/main_btn_styling"
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardViewSuggestion"
+        android:text="Unlock a world of savings with our exclusive offer! Invite your friends to join our app, and both you and your friend will enjoy a fabulous 50% discount on your next purchase! 🌟"
+        android:layout_centerInParent="true"
+        android:textSize="18dp"
+        android:textStyle="italic|bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:id="@+id/newsTxt"
+        />
+
+    <!-- Invite Friends Card -->
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cardViewInviteFriends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newsTxt"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#FFC107">
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@color/lightBrown">
+            >
+
+            <!-- Invite Friends Section -->
+            <TextView
+                android:id="@+id/textViewInviteFriends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Invite Friends:"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                />
+
+            <!-- Email Input -->
+            <EditText
+                android:layout_below="@+id/textViewInviteFriends"
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter friend's email"
+
+                />
+
+            <!-- Invite Button -->
+            <Button
+                android:layout_below="@id/editTextEmail"
+                android:id="@+id/buttonInvite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Invite"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/main_btn_styling"
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
